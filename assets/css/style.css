@@ -127,7 +127,7 @@ input[type="search"] {
   position: relative;
   margin-top: 30px;
 }
-input[type="search"].search-input{
+input[type="text"].search-input{
   font-size: 16px;
   width: 100%;
   flex: 1;
@@ -298,6 +298,7 @@ button.search-btn:hover{
   font-size: 14px;
 }
 .noshop-wrapper{
+  width: 100%;
   text-align: center;
 }
 .shopItem .shopItem-icon{
@@ -310,7 +311,7 @@ button.search-btn:hover{
   font-size: 20px;
   cursor: pointer;
 }
-.active .shopItem-icon{
+.shopItem-icon.active {
   color:#ed828f;
 }
 .search-wrapper.display{

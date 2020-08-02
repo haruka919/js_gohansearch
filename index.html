@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./assets/favicon.ico">
   <title>JavaScriptでグルメ検索</title>
   <link rel="stylesheet" href="./assets/css/style.css">
   <script src="https://kit.fontawesome.com/7f19bc1ee0.js" crossorigin="anonymous"></script>
@@ -19,126 +20,27 @@
   </header>
   <main>
     <div class="site-width">
-      <div class="search-wrapper">
-        <input type="search" class="search-input" placeholder="場所・ジャンルを検索">
-        <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+      <div id="search-wrapper" class="search-wrapper">
+        <input type="text" id="search-input" class="search-input" placeholder="場所・ジャンルを検索">
+        <button type="submit" id="search-btn" class="search-btn"><i class="fas fa-search"></i></button>
       </div>
   
-      <section class="shopList-wrapper">
-        <div class="shopItems" name="shop-item">
-          <div class="shopItem">
-            <figure class="shopItem-img">
-              <img src="https://placehold.jp/300x300.png" alt="">
-              <i class="fas fa-heart shopItem-icon"></i>
-            </figure>
-            <div class="shopItem-subinfo">
-              <span class="shopItem-area">東京</span>
-            </div>
-            <h2 class="shopItem-name">吉野家</h2>
-          </div>
-          <div class="shopItem">
-            <figure class="shopItem-img">
-              <img src="https://placehold.jp/300x300.png" alt="">
-              <i class="fas fa-heart shopItem-icon"></i>
-            </figure>
-            <div class="shopItem-subinfo">
-              <span class="shopItem-area">東京</span>
-            </div>
-            <h2 class="shopItem-name">吉野家</h2>
-          </div>
-          <div class="shopItem">
-            <figure class="shopItem-img">
-              <img src="https://placehold.jp/300x300.png" alt="">
-              <i class="fas fa-heart shopItem-icon"></i>
-            </figure>
-            <div class="shopItem-subinfo">
-              <span class="shopItem-area">東京</span>
-            </div>
-            <h2 class="shopItem-name">吉野家</h2>
-          </div>
-          <div class="shopItem">
-            <figure class="shopItem-img">
-              <img src="https://placehold.jp/300x300.png" alt="">
-              <i class="fas fa-heart shopItem-icon"></i>
-            </figure>
-            <div class="shopItem-subinfo">
-              <span class="shopItem-area">東京</span>
-            </div>
-            <h2 class="shopItem-name">吉野家</h2>
-          </div>
-          <div class="shopItem">
-            <figure class="shopItem-img">
-              <img src="https://placehold.jp/300x300.png" alt="">
-              <i class="fas fa-heart shopItem-icon"></i>
-            </figure>
-            <div class="shopItem-subinfo">
-              <span class="shopItem-area">東京</span>
-            </div>
-            <h2 class="shopItem-name">吉野家</h2>
-          </div>
-          <div class="shopItem">
-            <figure class="shopItem-img">
-              <img src="https://placehold.jp/300x300.png" alt="">
-              <i class="fas fa-heart shopItem-icon"></i>
-            </figure>
-            <div class="shopItem-subinfo">
-              <span class="shopItem-area">東京</span>
-            </div>
-            <h2 class="shopItem-name">吉野家</h2>
-          </div>
-          <div class="shopItem">
-            <figure class="shopItem-img">
-              <img src="https://placehold.jp/300x300.png" alt="">
-              <i class="fas fa-heart shopItem-icon"></i>
-            </figure>
-            <div class="shopItem-subinfo">
-              <span class="shopItem-area">東京</span>
-            </div>
-            <h2 class="shopItem-name">吉野家</h2>
-          </div>
-          <div class="shopItem">
-            <figure class="shopItem-img">
-              <img src="https://placehold.jp/300x300.png" alt="">
-              <i class="fas fa-heart shopItem-icon"></i>
-            </figure>
-            <div class="shopItem-subinfo">
-              <span class="shopItem-area">東京</span>
-            </div>
-            <h2 class="shopItem-name">吉野家</h2>
-          </div>
+      <section id="shopItems-wrapper" class="shopList-wrapper">
+        <div id="shopItems" class="shopItems">
         </div>
-        <!-- <div v-else>
-          <p class="noshop-wrapper">
-            <img class="noshop" src="./assets/img/noshop.png" alt="">
-            <span class="noshop-txt">お気に入りに登録されているお店がありません。</span>
-          </p>
-          <p class="noshop-wrapper">
-            <img class="noshop" src="./assets/img/search.png" alt="">
-            <span class="noshop-txt">お気に入りのお店見つかるかな〜〜</span>
-          </p>
-        </div> -->
       </section>
     </div>
   
     <footer>
-      <!-- <div class="footer-wrapper">
-        <a href="#/all" class="footer-icon-wrapper">
-          <i class="fas fa-home footer-icon"></i>
-          <span class="footer-icon-txt">戻る</span>
-        </a>
-        <a href="#/liked" class="footer-icon-wrapper">
-          <i class="far fa-heart footer-icon"></i>
-          <span class="footer-icon-txt">お気に入り</span>
-        </a>
-      </div> -->
       <div class="footer-wrapper">
-        <a class="footer-icon-wrapper non-click">
-          <i class="far fa-heart footer-icon"></i>
-          <span class="footer-icon-txt">お気に入り</span>
-        </a>
+        <div id="favorite-btn" class="footer-icon-wrapper">
+          <i id="filter-icon" class="far fa-heart footer-icon"></i>
+          <span id="filter-txt" class="footer-icon-txt">お気に入り</span>
+        </div>
       </div>
     </footer>
   </main>
   </div>
+  <script src="./assets/js/main.js"></script>
 </body>
 </html>
